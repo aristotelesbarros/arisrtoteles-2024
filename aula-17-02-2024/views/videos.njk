@@ -1,55 +1,22 @@
 {% extends "layout.njk"%}
  {%block content%}
 
+ 
+
     <section class="cards"> 
-    <div class="card" id="9BlnxoT5x0k">
+        {% for item in items %}
+    <div class="card" id={{item.id}}>
         <div class="card_imge">
-            <img src="https://img.youtube.com/vi/9BlnxoT5x0k/maxresdefault.jpg" alt="">
+            <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="">
         </div>
-        <div class="card_content">14 MISTÉRIOS QUE FORAM ESQUECIDOS PELO ODA</div>
+        <div class="card_content">{{item.title}}</div>
         <div class="card_info">
-            <p>17:20 min</p>
-            <p class="card_price">FREE</p>
+            <p>{{item.duration}}</p>
+            <p class="card_price">{{item.price}}</p>
         </div>
-        
-    </div>   
-    <div class="card" id="gwCMl0QOek0">
-        <div class="card_imge">
-            <img src="https://img.youtube.com/vi/gwCMl0QOek0/maxresdefault.jpg" alt="">
-        </div>
-        <div class="card_content">ODA GÊNIO!! SPOILER DO FUTURO DE AOKIJI EM ONE PIECE?!</div>
-        <div class="card_info">
-            <p>23:20 min</p>
-            <p class="card_price">FREE</p>
-        </div>
-        
+          
     </div> 
-    <div class="card" id="qqNNa5jFqjE">
-        <div class="card_imge">
-            <img src="https://img.youtube.com/vi/qqNNa5jFqjE/maxresdefault.jpg" alt="">
-        </div>
-        <div class="card_content">5 PERSONAGENS QUE SOLARIAM KAIDO E QUE 5 QUE SERIAM HUMILHADOS</div>
-        <div class="card_info">
-            <p>11:30 min</p>
-            <p class="card_price">FREE</p>
-        </div>
-        
-    </div> 
-    <div class="card" id="EIJrJcikzm0">
-        <div class="card_imge">
-            <img src="https://img.youtube.com/vi/EIJrJcikzm0/maxresdefault.jpg" alt="">
-        </div>
-        <div class="card_content">SEGUNDA TEMPORADA DE ONE PIECE SAI ANO QUE VEM? CROCODILE CONFIRMADO?</div>
-        <div class="card_info">
-            <p>17:20 min</p>
-            <p class="card_price">FREE</p>
-        </div>
-        
-    </div> 
-    
-   
-        
-    </div>  
+   {% endfor %}
     </section>
 <div class="modal_overlay">
     <div class="modal">

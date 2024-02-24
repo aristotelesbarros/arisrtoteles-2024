@@ -1,29 +1,29 @@
-module.exports = [
+module.exports=[
     {
-        id:"9BlnxoT5x0k",
-        title:"",
-        duration:"",
-        price:""
-    },
+        id:"iDsvCiVG9kk",
+        title:"CARROS NOVOS",
+        duration:"17:50 min",
+        price:"free",
+        featured: true
 
-    {
-        id:"",
-        title:"",
-        duration:"",
-        price:""
     },
+    {
+        id:"lUq6TwYi8mg",
+        title:"CARROS SEMI NOVOS",
+        duration:"17:50",
+        price:"free"
 
-    {
-        id:"",
-        title:"",
-        duration:"",
-        price:""
     },
+    {
+        id:"0813eXwgC6I",
+        title:"CARROS ANTIGOS",
+        duration:"17:50",
+        price:"free",
+        featured: true
 
-    {
-        id:"",
-        title:"",
-        duration:"",
-        price:""
-    },
+    }
 ]
+
+
+
+
