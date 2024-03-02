@@ -7,7 +7,8 @@ const videos= require ('./data');
 server.use(express.static('public'))
 server.set ("view engine","njk")
 nunjucks.configure ("views",{
-    express:server
+    express:server,
+    autoescape:false
 })
 server.listen (5000,function(){
     console.log("hello wolrd!!!")
@@ -23,7 +24,7 @@ server.listen (5000,function(){
                 {name:"likedin",url:"https//:likedin.com/pedrao"},
             ]
         }
-        return res.render ("index")
+        return res.render ("index"),{about}
     })
 
     server.get("/videos",function (req,res){

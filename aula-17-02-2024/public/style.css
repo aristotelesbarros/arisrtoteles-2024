@@ -240,6 +240,16 @@ iframe{
 
 }
 
-
-
+.card_imge{
+    position: relative;
+}
+.featured{
+    background-color: green;
+    color:white;
+    padding: 2px 8px;
+    right: 5px;
+    border-radius: 16px;
+    top: -6px;
+    position: absolute;
+}
     
